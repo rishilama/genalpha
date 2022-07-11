@@ -270,11 +270,19 @@ a{
     }
 }
 
+@media(max-width:600px) {
+    .bg-image{
+        width: 100%;
+        height: 100vh;
+        background-image:  linear-gradient(to right bottom, var(--primary), var(--middle), var(--secondary)),url(/img/pexels-andrea-piacquadio-3768894\ 600px.jpg);
+    }
+}
+
 @media(max-width:500px) {
     .bg-image{
         width: 100%;
         height: 100vh;
-        background-image:  linear-gradient(to right bottom, var(--primary), var(--middle), var(--secondary)),url(/img/pexels-andrea-piacquadio-3768894\ small.jpg);
+        background-image:  linear-gradient(to right bottom, var(--primary), var(--middle), var(--secondary)),url(/img/pexels-andrea-piacquadio-3768894\ small\ 2.jpg);
     }
 }
 
@@ -396,13 +404,13 @@ a{
     gap: 10px;
     grid-template-columns: repeat(2,50%);
     grid-template-rows: 1;
-    /* position: absolute; */
 }
 
 .section-right__content{
     font-size: 15px;
     margin-bottom: 15px;
-    /* text-align: center; */
+    font-weight: 500;
+    color: #0d1137;
 }
 
 .button{
@@ -514,7 +522,7 @@ a{
 /* benefits section */
 
 .profits{
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .profit__heading{
@@ -608,4 +616,11 @@ a{
     .icons, .icon{
         width: 35px;
     }
+}
+
+/* free-trial-section */
+.free-trail-section{
+    margin-top: -100px;
+    background-color: rgb(252, 198, 217);
+    height: 90vh;
 }
