@@ -668,6 +668,7 @@ a{
     margin: 50px;
     width: 70%;
     
+    border-top: none;
     border-bottom: 2px solid #e52165;
 }
 
@@ -677,4 +678,33 @@ a{
 
 .free-trial__button, .wa{
     margin-top: 10px;
+}
+
+@media(max-width:768px){
+    .free-trail-section{
+        height: auto;
+        padding: 30px;
+    }
+
+    .free-trail-section__img{
+        background: url(/img/small\ screen\ 1.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        width: auto;
+        height: 300px;
+
+
+        float: none;
+    }
+    .free-trail-section__content{
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:400px){
+    .free-trail-section{
+        padding: 5px 30px;
+    }
 }
