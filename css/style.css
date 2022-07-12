@@ -357,7 +357,7 @@ a{
     margin-top: -70px;
     /* margin-bottom: 10px; */
     /* background-color: rgb(243, 229, 205); */
-    background-color: rgb(252, 198, 217);
+    background-color: rgb(255, 215, 229);
 
     padding: 50px 40px;
     border-radius: 20px;
@@ -618,9 +618,63 @@ a{
     }
 }
 
-/* free-trial-section */
+/* free-trial-section for large screen */
 .free-trail-section{
     margin-top: -100px;
-    background-color: rgb(252, 198, 217);
+    background-color: rgb(255, 215, 229);
     height: 90vh;
+}
+
+@media(max-width:600px){
+    .free-trail-section{
+        margin-top: 0px;
+    }
+}
+
+
+.wa a img{
+    width: 100px;
+    height: 100px;
+}
+
+.free-trail-section__img{
+    margin-top: 40px;
+
+    
+    background: url(/img/large\ screen\ laptop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    width: 50%;
+    height: 90%;
+    float: right;
+}
+
+.free-trail-section__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.free-trial__button{
+    width: auto;
+    border-radius: 20px;
+}
+
+.rule{
+    margin: 50px;
+    width: 70%;
+    
+    border-bottom: 2px solid #e52165;
+}
+
+.free-trail-section__head{
+    text-align: center;
+}
+
+.free-trial__button, .wa{
+    margin-top: 10px;
 }
