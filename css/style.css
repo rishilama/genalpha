@@ -618,7 +618,7 @@ a{
         grid-column: 2/3;
     }
 }
-
+/* 
 .point{
     background-color: #0d1137;
     border-radius: 10px;
@@ -629,7 +629,7 @@ a{
 .point p{
     color: white;
     word-wrap: break-word;
-}
+} */
 
 .point-head, .point-content{
     text-align: center;
