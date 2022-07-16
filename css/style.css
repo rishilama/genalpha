@@ -83,7 +83,7 @@ li .nav-right_link,
         font-size: 12px; 
     }
     .nav-links li .link:hover{
-        padding-bottom: 26px;
+        padding-bottom: 27px;
         border-bottom: 5px solid white;
     }
 }
@@ -287,9 +287,47 @@ a{
 }
 
 .hero-content{
-    /* position: absolute; */
-    /* top: 300px; */
     padding-top: 300px;
+}
+
+/* hero-animation */
+.imp{
+    animation: slide 0.5s ease-in;
+}
+
+.not-imp{    
+    animation: not-imp-slide 0.7s ease-in;
+}
+
+.anytime{
+    animation: anytime-slide 0.9s ease-in;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(-800px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes not-imp-slide{
+    0%{
+        transform: translateX(-800px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes anytime-slide{
+    0%{
+        transform: translateX(-800px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 
 
@@ -553,7 +591,7 @@ a{
     justify-content: center;
     align-items: center;
 
-    gap: 30px 20px;
+    gap: 30px 40px;
 }
 
 .profit-details{
@@ -562,10 +600,6 @@ a{
     justify-content: center;
     align-items: center;
     
-    cursor: pointer;
-
-    padding: 20px;
-
     border: 2px solid rgba(13, 17, 55, 0.5);
     border-radius: 10px;
 }
@@ -593,22 +627,46 @@ a{
     }
 }
 
+.point{
+    background-color: #0d1137;
+    border-radius: 10px;
+}
+
+.point h2,
+.point p{
+    color: white;
+}
+
 .point-head, .point-content{
     text-align: center;
     color: #0d1137;
 }
 
+.point-head{
+    padding: 10px 20px;
+}
+
 .point-content{
+    padding: 10px 25px 25px;
     font-weight: 500;
 }
 
+.icons, .icon{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: -20px;
 
+}
 
 .icons{
     width: 60px;
 }
 
 .icon{
+    width: 50px;
+}
+
+.icon-3{
     width: 40px;
 }
 
@@ -662,6 +720,7 @@ a{
 .free-trial__button{
     width: auto;
     border-radius: 20px;
+    font-size: 1rem;
 }
 
 .rule{
@@ -676,6 +735,9 @@ a{
     text-align: center;
 }
 
+.free-head{
+    font-size: 2.5rem;
+}
 .free-trial__button, .wa{
     margin-top: 10px;
 }
